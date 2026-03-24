@@ -1,0 +1,126 @@
+[2026-03-21 00:27:53] [INFO] 用户登录成功：790087
+[2026-03-21 01:09:45] [INFO] 用户登录成功：790087
+[2026-03-21 01:21:28] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-21 01:30:43] [ERROR] SQL执行失败：
+      SELECT vh.*, p.title, p.content, p.images, p.status, u.username, u.student_id
+      FROM view_history vh
+      LEFT JOIN post p ON vh.post_id = p.id
+      LEFT JOIN user u ON p.user_id = u.id
+      WHERE vh.user_id = ?
+      ORDER BY vh.view_time DESC
+      LIMIT ?, ?
+    ，参数：[2,0,20]，错误：Table 'web_databases_wall.view_history' doesn't exist
+[2026-03-21 01:30:43] [ERROR] 系统异常: Table 'web_databases_wall.view_history' doesn't exist
+[2026-03-21 01:35:08] [ERROR] SQL执行失败：
+      SELECT vh.*, p.title, p.content, p.images, p.status, u.username, u.student_id
+      FROM view_history vh
+      LEFT JOIN post p ON vh.post_id = p.id
+      LEFT JOIN user u ON p.user_id = u.id
+      WHERE vh.user_id = ?
+      ORDER BY vh.view_time DESC
+      LIMIT ?, ?
+    ，参数：[2,0,20]，错误：Table 'web_databases_wall.view_history' doesn't exist
+[2026-03-21 01:35:08] [ERROR] 系统异常: Table 'web_databases_wall.view_history' doesn't exist
+[2026-03-21 01:35:11] [ERROR] SQL执行失败：
+      SELECT vh.*, p.title, p.content, p.images, p.status, u.username, u.student_id
+      FROM view_history vh
+      LEFT JOIN post p ON vh.post_id = p.id
+      LEFT JOIN user u ON p.user_id = u.id
+      WHERE vh.user_id = ?
+      ORDER BY vh.view_time DESC
+      LIMIT ?, ?
+    ，参数：[2,0,20]，错误：Table 'web_databases_wall.view_history' doesn't exist
+[2026-03-21 01:35:11] [ERROR] 系统异常: Table 'web_databases_wall.view_history' doesn't exist
+[2026-03-21 01:42:34] [ERROR] SQL执行失败：
+      SELECT vh.*, p.title, p.content, p.images, p.status, u.username, u.student_id
+      FROM view_history vh
+      LEFT JOIN post p ON vh.post_id = p.id
+      LEFT JOIN user u ON p.user_id = u.id
+      WHERE vh.user_id = ?
+      ORDER BY vh.view_time DESC
+      LIMIT ?, ?
+    ，参数：[2,0,20]，错误：Unknown column 'p.title' in 'field list'
+[2026-03-21 01:42:34] [ERROR] 系统异常: Unknown column 'p.title' in 'field list'
+[2026-03-21 01:42:36] [ERROR] 系统异常: Unknown column 'p.title' in 'field list'
+[2026-03-21 01:42:36] [ERROR] SQL执行失败：
+      SELECT vh.*, p.title, p.content, p.images, p.status, u.username, u.student_id
+      FROM view_history vh
+      LEFT JOIN post p ON vh.post_id = p.id
+      LEFT JOIN user u ON p.user_id = u.id
+      WHERE vh.user_id = ?
+      ORDER BY vh.view_time DESC
+      LIMIT ?, ?
+    ，参数：[2,0,20]，错误：Unknown column 'p.title' in 'field list'
+[2026-03-21 01:48:13] [ERROR] SQL执行失败：
+      SELECT vh.*, p.title, p.content, p.images, p.status, u.username, u.student_id
+      FROM view_history vh
+      LEFT JOIN post p ON vh.post_id = p.id
+      LEFT JOIN user u ON p.user_id = u.id
+      WHERE vh.user_id = ?
+      ORDER BY vh.view_time DESC
+      LIMIT ?, ?
+    ，参数：[2,0,20]，错误：Unknown column 'p.title' in 'field list'
+[2026-03-21 01:48:13] [ERROR] 系统异常: Unknown column 'p.title' in 'field list'
+[2026-03-21 01:48:31] [ERROR] SQL执行失败：
+      SELECT vh.*, p.title, p.content, p.images, p.status, u.username, u.student_id
+      FROM view_history vh
+      LEFT JOIN post p ON vh.post_id = p.id
+      LEFT JOIN user u ON p.user_id = u.id
+      WHERE vh.user_id = ?
+      ORDER BY vh.view_time DESC
+      LIMIT ?, ?
+    ，参数：[2,0,20]，错误：Unknown column 'p.title' in 'field list'
+[2026-03-21 01:48:31] [ERROR] 系统异常: Unknown column 'p.title' in 'field list'
+[2026-03-21 01:49:58] [ERROR] SQL执行失败：
+      SELECT vh.*, p.title, p.content, p.images, p.status, u.username, u.student_id
+      FROM view_history vh
+      LEFT JOIN post p ON vh.post_id = p.id
+      LEFT JOIN user u ON p.user_id = u.id
+      WHERE vh.user_id = ?
+      ORDER BY vh.view_time DESC
+      LIMIT ?, ?
+    ，参数：[2,0,20]，错误：Unknown column 'p.title' in 'field list'
+[2026-03-21 01:49:58] [ERROR] 系统异常: Unknown column 'p.title' in 'field list'
+[2026-03-21 02:14:32] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-21 02:14:36] [ERROR] SQL执行失败：
+      SELECT vh.*, p.content, p.images, p.status, u.username, u.student_id
+      FROM view_history vh
+      LEFT JOIN post p ON vh.post_id = p.id
+      LEFT JOIN user u ON p.user_id = u.id
+      WHERE vh.user_id = ?
+      ORDER BY vh.view_time DESC
+      LIMIT ?, ?
+    ，参数：[2,0,20]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-21 02:14:36] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-21 02:14:37] [ERROR] SQL执行失败：
+      SELECT vh.*, p.content, p.images, p.status, u.username, u.student_id
+      FROM view_history vh
+      LEFT JOIN post p ON vh.post_id = p.id
+      LEFT JOIN user u ON p.user_id = u.id
+      WHERE vh.user_id = ?
+      ORDER BY vh.view_time DESC
+      LIMIT ?, ?
+    ，参数：[2,0,20]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-21 02:14:37] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-21 02:24:46] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-21 02:24:49] [ERROR] SQL执行失败：
+      SELECT vh.*, p.content, p.images, p.status, u.username, u.student_id
+      FROM view_history vh
+      LEFT JOIN post p ON vh.post_id = p.id
+      LEFT JOIN user u ON p.user_id = u.id
+      WHERE vh.user_id = ?
+      ORDER BY vh.view_time DESC
+      LIMIT ?, ?
+    ，参数：[2,0,20]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-21 02:24:49] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-21 02:32:03] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-21 03:17:18] [INFO] 用户登录成功：790087
+[2026-03-21 04:32:44] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-21 04:32:49] [WARN] 业务异常: [20001] 用户不存在
+[2026-03-21 04:32:49] [WARN] 业务异常: [20001] 用户不存在
+[2026-03-21 04:32:55] [INFO] 用户登录成功：790087
+[2026-03-21 04:33:01] [INFO] 文件上传成功：7F75BB9DFFBAF39FFAE511ED75C6C320.jpg -> 1774038781092-744394779.jpg
+[2026-03-21 04:33:01] [INFO] 文件上传成功：7F75BB9DFFBAF39FFAE511ED75C6C320.jpg -> 1774038781604-48982253.jpg
+[2026-03-21 04:33:01] [INFO] 文件上传成功：7F75BB9DFFBAF39FFAE511ED75C6C320.jpg -> 1774038781823-364867322.jpg
+[2026-03-21 20:02:43] [INFO] 文件上传成功：E7B31846B3557FD8048786D23F8CF7D8.png -> 1774094563971-487468621.png
+[2026-03-21 20:05:02] [INFO] 用户登录成功：admin001

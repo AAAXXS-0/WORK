@@ -1,0 +1,284 @@
+[2026-03-23 00:36:40] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 00:52:19] [INFO] 用户登录成功：790087
+[2026-03-23 01:05:50] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 01:31:34] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 01:45:39] [INFO] 用户登录成功：790087
+[2026-03-23 01:55:56] [INFO] 头像上传成功：19D509B9EC32ED76868835A3C825F004.jpg -> 1774202156937-524906064.jpg
+[2026-03-23 01:55:56] [INFO] 用户头像更新成功：用户ID=2，头像URL=/uploads/avatars/1774202156937-524906064.jpg
+[2026-03-23 02:34:29] [ERROR] 系统异常: auditService is not defined
+[2026-03-23 02:48:52] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 02:49:01] [INFO] 开始AI审核：帖子ID=6
+[2026-03-23 02:49:01] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 02:49:01] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 02:49:02] [ERROR] AI审核调度失败：帖子ID=6，错误=postService.updatePostStatus is not a function
+[2026-03-23 02:49:02] [ERROR] 系统异常: postService.updatePostStatus is not a function
+[2026-03-23 03:00:52] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 03:01:07] [INFO] 开始AI审核：帖子ID=6
+[2026-03-23 03:01:07] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 03:01:07] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 03:01:07] [INFO] AI审核完成：帖子ID=6，结果=存疑
+[2026-03-23 03:01:07] [INFO] 帖子更新成功：ID=6，用户ID=2
+[2026-03-23 03:01:35] [INFO] 评论创建成功：ID=1，用户ID=2，帖子ID=10
+[2026-03-23 03:02:35] [INFO] 评论创建成功：ID=2，用户ID=2，帖子ID=10
+[2026-03-23 03:03:32] [INFO] 评论创建成功：ID=3，用户ID=2，帖子ID=9
+[2026-03-23 03:05:05] [INFO] 评论创建成功：ID=4，用户ID=2，帖子ID=9
+[2026-03-23 03:23:10] [ERROR] SQL执行失败：
+      SELECT 
+        c.*,
+        p.content as post_content,
+        p.status as post_status
+      FROM comment c
+      LEFT JOIN post p ON c.post_id = p.id
+      WHERE c.user_id = ? AND c.status = 1
+      ORDER BY c.create_time DESC
+      LIMIT ?, ?
+    ，参数：[2,0,10]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-23 03:23:10] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-23 03:35:28] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 03:35:34] [ERROR] SQL执行失败：
+      SELECT 
+        c.id,
+        c.post_id as postId,
+        c.user_id as userId,
+        c.content,
+        c.parent_id as parentId,
+        c.status,
+        c.create_time as createTime,
+        p.content as postTitle,
+        p.status as postStatus
+      FROM comment c
+      LEFT JOIN post p ON c.post_id = p.id
+      WHERE c.user_id = ? AND c.status = 1
+      ORDER BY c.create_time DESC
+      LIMIT ?, ?
+    ，参数：[2,0,10]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-23 03:35:34] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-23 03:44:18] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 03:44:47] [INFO] 用户登录成功：790087
+[2026-03-23 03:44:54] [INFO] 文件上传成功：8D02A68237C97C39B8E889A024FBD13E.jpg -> 1774208694295-389941288.jpg
+[2026-03-23 03:45:08] [INFO] 文件上传成功：O.jpg -> 1774208708248-814539404.jpg
+[2026-03-23 03:45:09] [INFO] 帖子创建成功：ID=11，用户ID=2
+[2026-03-23 03:45:09] [INFO] 开始AI审核：帖子ID=11
+[2026-03-23 03:45:09] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 03:45:09] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 03:45:09] [INFO] AI审核完成：帖子ID=11，结果=存疑
+[2026-03-23 03:47:45] [INFO] 用户登录成功：790087
+[2026-03-23 03:48:07] [INFO] 帖子创建成功：ID=12，用户ID=2
+[2026-03-23 03:48:07] [INFO] 开始AI审核：帖子ID=12
+[2026-03-23 03:48:07] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 03:48:07] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 03:48:07] [INFO] AI审核完成：帖子ID=12，结果=存疑
+[2026-03-23 04:00:24] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 04:29:22] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 04:45:16] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 04:45:24] [INFO] 点赞成功：帖子ID=9，用户ID=2
+[2026-03-23 04:45:26] [INFO] 取消点赞成功：帖子ID=9，用户ID=2
+[2026-03-23 04:45:32] [INFO] 点赞成功：帖子ID=8，用户ID=2
+[2026-03-23 04:45:33] [INFO] 取消点赞成功：帖子ID=8，用户ID=2
+[2026-03-23 04:58:09] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 04:58:19] [INFO] 浏览记录添加成功：ID=1，用户ID=2，帖子ID=12
+[2026-03-23 04:58:26] [INFO] 浏览记录添加成功：ID=1，用户ID=2，帖子ID=12
+[2026-03-23 04:58:27] [INFO] 点赞成功：帖子ID=12，用户ID=2
+[2026-03-23 04:58:27] [INFO] 取消点赞成功：帖子ID=12，用户ID=2
+[2026-03-23 04:58:36] [INFO] 帖子创建成功：ID=13，用户ID=2
+[2026-03-23 04:58:36] [INFO] 开始AI审核：帖子ID=13
+[2026-03-23 04:58:36] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 04:58:36] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 04:58:36] [INFO] AI审核完成：帖子ID=13，结果=存疑
+[2026-03-23 05:07:32] [INFO] 浏览记录添加成功：ID=2，用户ID=2，帖子ID=9
+[2026-03-23 05:51:40] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 05:51:55] [INFO] 浏览记录添加成功：ID=2，用户ID=2，帖子ID=9
+[2026-03-23 05:52:00] [INFO] 评论创建成功：ID=5，用户ID=2，帖子ID=9
+[2026-03-23 05:52:19] [INFO] 头像上传成功：10.jpg -> 1774216339938-192743157.jpg
+[2026-03-23 05:52:19] [INFO] 用户头像更新成功：用户ID=2，头像URL=/uploads/avatars/1774216339938-192743157.jpg
+[2026-03-23 05:52:30] [INFO] 用户登录成功：admin001
+[2026-03-23 05:53:46] [INFO] 用户登录成功：790087
+[2026-03-23 06:04:18] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 06:04:44] [INFO] 头像上传成功：12B02CD619332ACF3FBB96F93BBEC6E7.jpg -> 1774217084024-177483986.jpg
+[2026-03-23 06:04:44] [INFO] 用户头像更新成功：用户ID=2，头像URL=/uploads/avatars/1774217084024-177483986.jpg
+[2026-03-23 06:04:44] [INFO] 开始AI审核：用户ID=2
+[2026-03-23 06:04:44] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 06:04:44] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 06:04:44] [INFO] AI审核完成：用户ID=2，结果=存疑
+[2026-03-23 06:04:49] [INFO] 浏览记录添加成功：ID=2，用户ID=2，帖子ID=9
+[2026-03-23 06:04:56] [INFO] 评论创建成功：ID=6，用户ID=2，帖子ID=9
+[2026-03-23 06:04:56] [INFO] 开始AI审核：评论ID=6
+[2026-03-23 06:04:56] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 06:04:56] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 06:04:56] [INFO] AI审核完成：评论ID=6，结果=存疑
+[2026-03-23 06:05:02] [INFO] 浏览记录添加成功：ID=2，用户ID=2，帖子ID=9
+[2026-03-23 06:05:25] [INFO] 浏览记录添加成功：ID=2，用户ID=2，帖子ID=9
+[2026-03-23 06:10:07] [INFO] 浏览记录添加成功：ID=2，用户ID=2，帖子ID=9
+[2026-03-23 06:12:33] [INFO] 浏览记录添加成功：ID=2，用户ID=2，帖子ID=9
+[2026-03-23 06:12:55] [INFO] 浏览记录添加成功：ID=2，用户ID=2，帖子ID=9
+[2026-03-23 06:21:57] [INFO] 评论删除成功：ID=6，用户ID=2
+[2026-03-23 06:22:03] [INFO] 评论删除成功：ID=6，用户ID=2
+[2026-03-23 06:23:53] [INFO] 评论删除成功：ID=6，用户ID=2
+[2026-03-23 06:24:27] [INFO] 评论删除成功：ID=6，用户ID=2
+[2026-03-23 06:30:53] [INFO] 评论删除成功：ID=6，用户ID=2
+[2026-03-23 06:31:35] [INFO] 用户登录成功：admin001
+[2026-03-23 06:36:53] [INFO] 用户登录成功：790087
+[2026-03-23 06:37:01] [INFO] 评论删除成功：ID=6，用户ID=2
+[2026-03-23 06:45:00] [INFO] 评论删除成功：ID=6，用户ID=2
+[2026-03-23 06:51:11] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 06:52:14] [INFO] 浏览记录添加成功：ID=2，用户ID=2，帖子ID=9
+[2026-03-23 06:52:19] [INFO] 评论创建成功：ID=7，用户ID=2，帖子ID=9
+[2026-03-23 06:52:19] [INFO] 开始AI审核：评论ID=7
+[2026-03-23 06:52:19] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 06:52:19] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 06:52:19] [INFO] AI审核完成：评论ID=7，结果=存疑
+[2026-03-23 06:52:37] [INFO] 头像上传成功：19D509B9EC32ED76868835A3C825F004.jpg -> 1774219957173-403309731.jpg
+[2026-03-23 06:52:37] [INFO] 用户头像更新成功：用户ID=2，头像URL=/uploads/avatars/1774219957173-403309731.jpg
+[2026-03-23 06:52:37] [INFO] 开始AI审核：用户ID=2
+[2026-03-23 06:52:37] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 06:52:37] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 06:52:37] [INFO] AI审核完成：用户ID=2，结果=存疑
+[2026-03-23 06:52:43] [INFO] 用户登录成功：admin001
+[2026-03-23 07:12:50] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 07:14:53] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 07:15:00] [ERROR] SQL执行失败：
+      SELECT 
+        id,
+        student_id,
+        username,
+        avatar,
+        avatar_status,
+        avatar_audit_user_id,
+        avatar_reject_reason,
+        avatar_ai_result as ai_result
+      FROM user
+      WHERE avatar_status = 1
+      ORDER BY id DESC
+      LIMIT 0, 10
+    ，参数：undefined，错误：Unknown column 'avatar_ai_result' in 'field list'
+[2026-03-23 07:15:00] [ERROR] 系统异常: Unknown column 'avatar_ai_result' in 'field list'
+[2026-03-23 07:15:02] [ERROR] 系统异常: Unknown column 'avatar_ai_result' in 'field list'
+[2026-03-23 07:15:02] [ERROR] SQL执行失败：
+      SELECT 
+        id,
+        student_id,
+        username,
+        avatar,
+        avatar_status,
+        avatar_audit_user_id,
+        avatar_reject_reason,
+        avatar_ai_result as ai_result
+      FROM user
+      WHERE avatar_status = 1
+      ORDER BY id DESC
+      LIMIT 0, 10
+    ，参数：undefined，错误：Unknown column 'avatar_ai_result' in 'field list'
+[2026-03-23 07:19:02] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 07:22:42] [INFO] 用户登录成功：790087
+[2026-03-23 07:31:32] [INFO] 用户登录成功：admin001
+[2026-03-23 15:55:19] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 17:28:20] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 17:29:01] [INFO] 用户登录成功：790087
+[2026-03-23 17:29:10] [INFO] 头像上传成功：19D509B9EC32ED76868835A3C825F004.jpg -> 1774258150971-716019783.jpg
+[2026-03-23 17:29:10] [INFO] 用户头像更新成功：用户ID=2，头像URL=/uploads/avatars/1774258150971-716019783.jpg
+[2026-03-23 17:29:10] [INFO] 开始AI审核：用户ID=2
+[2026-03-23 17:29:11] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 17:29:11] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 17:29:11] [INFO] AI审核完成：用户ID=2，结果=存疑
+[2026-03-23 17:29:28] [INFO] 浏览记录添加成功：ID=2，用户ID=2，帖子ID=9
+[2026-03-23 17:29:32] [INFO] 评论创建成功：ID=8，用户ID=2，帖子ID=9
+[2026-03-23 17:29:32] [INFO] 开始AI审核：评论ID=8
+[2026-03-23 17:29:32] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 17:29:32] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 17:29:32] [INFO] AI审核完成：评论ID=8，结果=存疑
+[2026-03-23 17:29:37] [WARN] 业务异常: [21004] 无管理员权限
+[2026-03-23 17:29:37] [WARN] 业务异常: [21004] 无管理员权限
+[2026-03-23 17:29:43] [INFO] 用户登录成功：admin001
+[2026-03-23 17:29:49] [ERROR] SQL执行失败：
+      UPDATE comment 
+      SET status = ?, audit_user_id = ?, reject_reason = ?
+      WHERE id = ?
+    ，参数：[null,1,"",8]，错误：Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+[2026-03-23 17:29:49] [ERROR] 系统异常: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+[2026-03-23 17:29:51] [ERROR] SQL执行失败：
+      UPDATE comment 
+      SET status = ?, audit_user_id = ?, reject_reason = ?
+      WHERE id = ?
+    ，参数：[null,1,"",7]，错误：Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+[2026-03-23 17:29:51] [ERROR] 系统异常: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+[2026-03-23 17:31:00] [INFO] 人工审核完成：评论ID=8，操作=reject，审核人ID=1
+[2026-03-23 18:13:49] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 18:13:56] [INFO] 人工审核完成：评论ID=7，操作=pass，审核人ID=1
+[2026-03-23 18:14:11] [INFO] 用户登录成功：790087
+[2026-03-23 18:14:12] [INFO] 浏览记录添加成功：ID=2，用户ID=2，帖子ID=9
+[2026-03-23 18:14:26] [INFO] 头像上传成功：12B02CD619332ACF3FBB96F93BBEC6E7.jpg -> 1774260866006-182844336.jpg
+[2026-03-23 18:14:26] [INFO] 用户头像更新成功：用户ID=2，头像URL=/uploads/avatars/1774260866006-182844336.jpg
+[2026-03-23 18:14:26] [INFO] 开始AI审核：用户ID=2
+[2026-03-23 18:14:26] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 18:14:26] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 18:14:26] [INFO] AI审核完成：用户ID=2，结果=存疑
+[2026-03-23 18:14:45] [INFO] 用户登录成功：admin001
+[2026-03-23 18:34:13] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 18:34:29] [INFO] 用户登录成功：790087
+[2026-03-23 18:34:38] [INFO] 用户登录成功：admin001
+[2026-03-23 18:34:42] [INFO] 头像审核完成：用户ID=2，操作=pass，审核人ID=1
+[2026-03-23 18:34:53] [INFO] 用户登录成功：790087
+[2026-03-23 18:35:01] [INFO] 头像上传成功：0562DF14A1F40685961C00A23BB8B1DE.jpg -> 1774262101869-821877575.jpg
+[2026-03-23 18:35:01] [INFO] 用户待审核头像更新成功：用户ID=2，待审核头像URL=/uploads/avatars/1774262101869-821877575.jpg
+[2026-03-23 18:35:01] [INFO] 开始AI审核：用户ID=2
+[2026-03-23 18:35:01] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 18:35:01] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 18:35:01] [INFO] AI审核完成：用户ID=2，结果=存疑
+[2026-03-23 18:35:08] [INFO] 用户登录成功：admin001
+[2026-03-23 18:35:20] [INFO] 头像审核完成：用户ID=2，操作=reject，审核人ID=1
+[2026-03-23 18:35:30] [INFO] 用户登录成功：790087
+[2026-03-23 18:35:38] [INFO] 头像上传成功：19D509B9EC32ED76868835A3C825F004.jpg -> 1774262138400-666392713.jpg
+[2026-03-23 18:35:38] [INFO] 用户待审核头像更新成功：用户ID=2，待审核头像URL=/uploads/avatars/1774262138400-666392713.jpg
+[2026-03-23 18:35:38] [INFO] 开始AI审核：用户ID=2
+[2026-03-23 18:35:38] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 18:35:38] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 18:35:38] [INFO] AI审核完成：用户ID=2，结果=存疑
+[2026-03-23 18:35:44] [INFO] 用户登录成功：admin001
+[2026-03-23 18:35:57] [INFO] 头像审核完成：用户ID=2，操作=pass，审核人ID=1
+[2026-03-23 18:36:04] [INFO] 用户登录成功：790087
+[2026-03-23 18:36:11] [INFO] 头像上传成功：8059B874A0A8D6A9CB4D27216815D69F.jpg -> 1774262171699-121397663.jpg
+[2026-03-23 18:36:11] [INFO] 用户待审核头像更新成功：用户ID=2，待审核头像URL=/uploads/avatars/1774262171699-121397663.jpg
+[2026-03-23 18:36:11] [INFO] 开始AI审核：用户ID=2
+[2026-03-23 18:36:11] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 18:36:11] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 18:36:11] [INFO] AI审核完成：用户ID=2，结果=存疑
+[2026-03-23 18:36:17] [INFO] 头像上传成功：313E9EA57EB4003A641D47AF657E6D7B.jpg -> 1774262177104-171333268.jpg
+[2026-03-23 18:36:17] [INFO] 用户待审核头像更新成功：用户ID=2，待审核头像URL=/uploads/avatars/1774262177104-171333268.jpg
+[2026-03-23 18:36:17] [INFO] 开始AI审核：用户ID=2
+[2026-03-23 18:36:17] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 18:36:17] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 18:36:17] [INFO] AI审核完成：用户ID=2，结果=存疑
+[2026-03-23 18:36:23] [INFO] 用户登录成功：admin001
+[2026-03-23 18:36:28] [INFO] 头像审核完成：用户ID=2，操作=pass，审核人ID=1
+[2026-03-23 18:36:46] [INFO] 用户登录成功：790087
+[2026-03-23 18:37:10] [INFO] 头像上传成功：19D509B9EC32ED76868835A3C825F004.jpg -> 1774262230017-850947371.jpg
+[2026-03-23 18:37:10] [INFO] 用户待审核头像更新成功：用户ID=2，待审核头像URL=/uploads/avatars/1774262230017-850947371.jpg
+[2026-03-23 18:37:10] [INFO] 开始AI审核：用户ID=2
+[2026-03-23 18:37:10] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 18:37:10] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 18:37:10] [INFO] AI审核完成：用户ID=2，结果=存疑
+[2026-03-23 18:37:25] [INFO] 用户登录成功：admin001
+[2026-03-23 18:39:21] [INFO] 用户登录成功：790087
+[2026-03-23 18:39:52] [INFO] 用户登录成功：admin001
+[2026-03-23 18:46:19] [INFO] 用户登录成功：790087
+[2026-03-23 18:46:37] [INFO] 用户登录成功：admin001
+[2026-03-23 18:46:42] [INFO] 头像审核完成：用户ID=2，操作=pass，审核人ID=1
+[2026-03-23 18:46:54] [INFO] 用户登录成功：790087
+[2026-03-23 18:47:10] [INFO] 头像上传成功：F2C532FF3A6016059ED2B7E7487B0F5D.jpg -> 1774262830991-771967914.jpg
+[2026-03-23 18:47:11] [INFO] 用户待审核头像更新成功：用户ID=2，待审核头像URL=/uploads/avatars/1774262830991-771967914.jpg
+[2026-03-23 18:47:11] [INFO] 开始AI审核：用户ID=2
+[2026-03-23 18:47:11] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 18:47:11] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-23 18:47:11] [INFO] AI审核完成：用户ID=2，结果=存疑
+[2026-03-23 18:47:40] [INFO] 用户登录成功：admin001
+[2026-03-23 18:47:58] [INFO] 用户登录成功：admin001
+[2026-03-23 18:57:59] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-23 18:58:02] [INFO] 获取仪表盘数据成功
+[2026-03-23 18:58:04] [INFO] 获取仪表盘数据成功
+[2026-03-23 18:58:07] [INFO] 获取仪表盘数据成功
+[2026-03-23 19:01:25] [INFO] 用户登录成功：790087
+[2026-03-23 19:01:28] [INFO] 浏览记录添加成功：ID=3，用户ID=2，帖子ID=8
+[2026-03-23 19:01:30] [INFO] 点赞成功：帖子ID=8，用户ID=2
+[2026-03-23 19:01:33] [INFO] 浏览记录添加成功：ID=2，用户ID=2，帖子ID=9
+[2026-03-23 19:01:36] [INFO] 浏览记录添加成功：ID=3，用户ID=2，帖子ID=8
+[2026-03-23 19:01:37] [INFO] 取消点赞成功：帖子ID=8，用户ID=2
