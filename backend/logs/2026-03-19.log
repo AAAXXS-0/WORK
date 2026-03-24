@@ -1,0 +1,205 @@
+[2026-03-19 02:09:42] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-19 02:12:08] [INFO] 用户登录成功：admin001
+[2026-03-19 02:12:13] [WARN] 业务异常: [21004] 无管理员权限
+[2026-03-19 02:12:21] [WARN] 业务异常: [21004] 无管理员权限
+[2026-03-19 02:13:52] [WARN] 业务异常: [21004] 无管理员权限
+[2026-03-19 02:13:54] [WARN] 业务异常: [21004] 无管理员权限
+[2026-03-19 02:14:25] [WARN] 业务异常: [21004] 无管理员权限
+[2026-03-19 02:14:28] [WARN] 业务异常: [21004] 无管理员权限
+[2026-03-19 02:14:30] [WARN] 业务异常: [21004] 无管理员权限
+[2026-03-19 02:14:54] [WARN] 业务异常: [21004] 无管理员权限
+[2026-03-19 02:14:58] [WARN] 业务异常: [21004] 无管理员权限
+[2026-03-19 02:22:38] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-19 02:22:44] [ERROR] SQL执行失败：
+      SELECT al.*, p.content 
+      FROM audit_log al
+      LEFT JOIN post p ON al.post_id = p.id
+      WHERE 1=1
+     ORDER BY al.create_time DESC LIMIT ?, ?，参数：[0,"10"]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 02:22:44] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 02:22:46] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 02:22:46] [ERROR] SQL执行失败：
+      SELECT al.*, p.content 
+      FROM audit_log al
+      LEFT JOIN post p ON al.post_id = p.id
+      WHERE 1=1
+     ORDER BY al.create_time DESC LIMIT ?, ?，参数：[0,"10"]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 02:23:21] [ERROR] SQL执行失败：
+      SELECT al.*, p.content 
+      FROM audit_log al
+      LEFT JOIN post p ON al.post_id = p.id
+      WHERE 1=1
+     ORDER BY al.create_time DESC LIMIT ?, ?，参数：[0,"10"]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 02:23:21] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 02:26:08] [WARN] 业务异常: [20001] 用户不存在
+[2026-03-19 02:26:28] [WARN] 业务异常: [20002] 密码错误
+[2026-03-19 02:26:33] [INFO] 用户登录成功：admin001
+[2026-03-19 02:26:35] [ERROR] SQL执行失败：
+      SELECT al.*, p.content 
+      FROM audit_log al
+      LEFT JOIN post p ON al.post_id = p.id
+      WHERE 1=1
+     ORDER BY al.create_time DESC LIMIT ?, ?，参数：[0,"10"]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 02:26:35] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 02:30:53] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-19 02:31:16] [ERROR] SQL执行失败：
+      SELECT al.*, p.content 
+      FROM audit_log al
+      LEFT JOIN post p ON al.post_id = p.id
+      WHERE 1=1
+     ORDER BY al.create_time DESC LIMIT ?, ?，参数：[0,10]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 02:31:16] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 02:35:40] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-19 02:53:18] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-19 02:53:23] [ERROR] SQL执行失败：SELECT * FROM student_roster WHERE 1=1 ORDER BY create_time DESC LIMIT ?, ?，参数：[0,10]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 02:53:23] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 02:53:25] [ERROR] SQL执行失败：
+      SELECT p.*, u.student_id, u.username 
+      FROM post p
+      LEFT JOIN user u ON p.user_id = u.id
+      WHERE 1=1
+     ORDER BY p.create_time DESC LIMIT ?, ?，参数：[0,10]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 02:53:25] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 02:53:34] [ERROR] SQL执行失败：SELECT * FROM student_roster WHERE 1=1 ORDER BY create_time DESC LIMIT ?, ?，参数：[0,10]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 02:53:34] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 02:54:05] [ERROR] SQL执行失败：SELECT * FROM student_roster WHERE 1=1 ORDER BY create_time DESC LIMIT ?, ?，参数：[0,10]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 02:54:05] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 02:57:24] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-19 02:57:29] [ERROR] SQL执行失败：SELECT * FROM student_roster WHERE 1=1 ORDER BY create_time DESC LIMIT ?, ?，参数：[0,10]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 02:57:29] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 03:02:02] [ERROR] SQL执行失败：SELECT * FROM student_roster WHERE 1=1 ORDER BY create_time DESC LIMIT ?, ?，参数：[0,10]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 03:02:02] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 03:02:53] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-19 03:02:55] [ERROR] SQL执行失败：SELECT * FROM student_roster WHERE 1=1 ORDER BY create_time DESC LIMIT ?, ?，参数：[0,10]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 03:02:55] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 03:06:55] [ERROR] SQL执行失败：SELECT * FROM student_roster WHERE 1=1 ORDER BY create_time DESC LIMIT ?, ?，参数：[0,10]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 03:06:55] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 03:07:17] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-19 03:07:28] [INFO] 用户登录成功：admin001
+[2026-03-19 03:07:33] [ERROR] SQL执行失败：SELECT * FROM student_roster WHERE 1=1 ORDER BY create_time DESC LIMIT ?, ?，参数：[0,10]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 03:07:33] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 03:07:35] [ERROR] SQL执行失败：
+      SELECT p.*, u.student_id, u.username 
+      FROM post p
+      LEFT JOIN user u ON p.user_id = u.id
+      WHERE 1=1
+     ORDER BY p.create_time DESC LIMIT ?, ?，参数：[0,10]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 03:07:35] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 03:07:37] [ERROR] SQL执行失败：SELECT * FROM student_roster WHERE 1=1 ORDER BY create_time DESC LIMIT ?, ?，参数：[0,10]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 03:07:37] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 03:08:37] [ERROR] SQL执行失败：SELECT * FROM student_roster WHERE 1=1 ORDER BY create_time DESC LIMIT ?, ?，参数：[0,10]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 03:08:37] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 03:11:20] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-19 03:11:31] [ERROR] SQL执行失败：
+      SELECT p.*, u.student_id, u.username 
+      FROM post p
+      LEFT JOIN user u ON p.user_id = u.id
+      WHERE 1=1
+     ORDER BY p.create_time DESC LIMIT ?, ?，参数：[0,10]，错误：Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 03:11:31] [ERROR] 系统异常: Incorrect arguments to mysqld_stmt_execute
+[2026-03-19 03:13:46] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-19 03:17:02] [WARN] 业务异常: [21001] Token无效或已过期
+[2026-03-19 03:17:21] [WARN] 业务异常: [21001] Token无效或已过期
+[2026-03-19 03:22:01] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-19 03:22:14] [ERROR] 系统异常: ENOENT: no such file or directory, open 'D:\code\HTML\WORK\backend\uploads\1773861734930-1.xlsx'
+[2026-03-19 03:26:44] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-19 03:26:49] [ERROR] SQL执行失败：
+      INSERT INTO student_roster (name, student_id, verify_code)
+      VALUES ?
+    ，参数：[[["张三","790087","441"],["李四","312300","514"],["王五","123456","700"]]]，错误：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 2
+[2026-03-19 03:26:49] [ERROR] 系统异常: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 2
+[2026-03-19 03:32:45] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-19 03:32:52] [INFO] 导入学生花名册成功，共导入3条记录
+[2026-03-19 03:34:17] [INFO] 学生注册成功：790087，姓名：张三
+[2026-03-19 03:34:26] [WARN] 业务异常: [20001] 用户不存在
+[2026-03-19 03:34:45] [INFO] 用户登录成功：790087
+[2026-03-19 03:34:53] [WARN] 业务异常: [21004] 无管理员权限
+[2026-03-19 03:34:57] [WARN] 业务异常: [21004] 无管理员权限
+[2026-03-19 03:35:00] [WARN] 业务异常: [21004] 无管理员权限
+[2026-03-19 03:35:01] [WARN] 业务异常: [21004] 无管理员权限
+[2026-03-19 03:35:04] [WARN] 业务异常: [21004] 无管理员权限
+[2026-03-19 03:35:33] [INFO] 用户登录成功：admin001
+[2026-03-19 03:36:27] [INFO] 用户登录成功：790087
+[2026-03-19 03:36:40] [ERROR] 系统异常: ENOENT: no such file or directory, open 'D:\code\HTML\WORK\backend\uploads\7F75BB9DFFBAF39FFAE511ED75C6C320.jpg'
+[2026-03-19 03:36:46] [INFO] 帖子创建成功：ID=1，用户ID=2
+[2026-03-19 03:36:46] [INFO] 开始AI审核：帖子ID=1
+[2026-03-19 03:36:47] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-19 03:36:47] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-19 03:36:47] [INFO] AI审核完成：帖子ID=1，结果=存疑
+[2026-03-19 03:36:47] [INFO] 帖子状态更新：ID=1，状态=待人工审核
+[2026-03-19 03:36:58] [INFO] 用户登录成功：admin001
+[2026-03-19 14:04:13] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-19 14:04:42] [INFO] 用户登录成功：790087
+[2026-03-19 14:04:49] [ERROR] 系统异常: ENOENT: no such file or directory, open 'D:\code\HTML\WORK\backend\uploads\44A50AB2629743F439ECA6840CCEA8A3.jpg'
+[2026-03-19 14:09:56] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-19 14:11:13] [ERROR] 文件上传失败：The bucket you are attempting to access must be addressed using the specified endpoint. Please send all future requests to this endpoint.
+[2026-03-19 14:11:13] [ERROR] 系统异常: The bucket you are attempting to access must be addressed using the specified endpoint. Please send all future requests to this endpoint.
+[2026-03-19 14:52:38] [INFO] 创建上传目录：D:\code\HTML\WORK\uploads
+[2026-03-19 14:52:38] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-19 14:52:53] [INFO] 文件上传成功：7F75BB9DFFBAF39FFAE511ED75C6C320.jpg -> 1773903173487-664141135.jpg
+[2026-03-19 14:53:02] [INFO] 帖子创建成功：ID=2，用户ID=2
+[2026-03-19 14:53:02] [INFO] 开始AI审核：帖子ID=2
+[2026-03-19 14:53:24] [ERROR] 腾讯云文本审核失败：request to https://tms.tencentcloudapi.com/ failed, reason: 
+[2026-03-19 14:53:24] [ERROR] AI审核失败：request to https://tms.tencentcloudapi.com/ failed, reason: 
+[2026-03-19 14:53:24] [INFO] AI审核完成：帖子ID=2，结果=存疑
+[2026-03-19 14:53:24] [INFO] 帖子状态更新：ID=2，状态=待人工审核
+[2026-03-19 14:54:22] [INFO] 用户登录成功：admin001
+[2026-03-19 14:54:33] [INFO] 帖子管理：ID=2，操作=delete，操作人=1
+[2026-03-19 14:54:35] [INFO] 帖子管理：ID=1，操作=delete，操作人=1
+[2026-03-19 14:55:07] [INFO] 帖子管理：ID=2，操作=restore，操作人=1
+[2026-03-19 14:55:09] [INFO] 帖子管理：ID=1，操作=restore，操作人=1
+[2026-03-19 14:55:34] [INFO] 用户登录成功：790087
+[2026-03-19 14:57:14] [INFO] 用户登录成功：admin001
+[2026-03-19 15:16:11] [INFO] 用户登录成功：admin001
+[2026-03-19 15:16:18] [INFO] 帖子管理：ID=2，操作=delete，操作人=1
+[2026-03-19 15:16:19] [INFO] 帖子管理：ID=1，操作=delete，操作人=1
+[2026-03-19 15:17:59] [INFO] 用户登录成功：790087
+[2026-03-19 15:18:03] [INFO] 帖子创建成功：ID=3，用户ID=2
+[2026-03-19 15:18:03] [INFO] 开始AI审核：帖子ID=3
+[2026-03-19 15:18:04] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-19 15:18:04] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-19 15:18:04] [INFO] AI审核完成：帖子ID=3，结果=存疑
+[2026-03-19 15:18:04] [INFO] 帖子状态更新：ID=3，状态=待人工审核
+[2026-03-19 15:18:09] [INFO] 用户登录成功：admin001
+[2026-03-19 15:18:30] [INFO] 人工审核完成：帖子ID=3，操作=pass，审核人ID=1
+[2026-03-19 15:18:30] [INFO] 帖子状态更新：ID=3，状态=已发布
+[2026-03-19 16:10:34] [INFO] 帖子管理：ID=3，操作=delete，操作人=1
+[2026-03-19 16:27:43] [INFO] 用户登录成功：790087
+[2026-03-19 16:27:48] [INFO] 文件上传成功：7F75BB9DFFBAF39FFAE511ED75C6C320.jpg -> 1773908868769-539655656.jpg
+[2026-03-19 16:27:55] [INFO] 帖子创建成功：ID=4，用户ID=2
+[2026-03-19 16:27:55] [INFO] 开始AI审核：帖子ID=4
+[2026-03-19 16:27:55] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-19 16:27:55] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-19 16:27:55] [INFO] 帖子状态更新：ID=4，状态=待人工审核
+[2026-03-19 16:27:55] [INFO] AI审核完成：帖子ID=4，结果=存疑
+[2026-03-19 16:29:25] [INFO] 用户登录成功：admin001
+[2026-03-19 16:35:10] [INFO] 用户登录成功：790087
+[2026-03-19 16:35:14] [INFO] 文件上传成功：7F75BB9DFFBAF39FFAE511ED75C6C320.jpg -> 1773909314750-110255269.jpg
+[2026-03-19 16:35:22] [INFO] 帖子创建成功：ID=5，用户ID=2
+[2026-03-19 16:35:22] [INFO] 开始AI审核：帖子ID=5
+[2026-03-19 16:35:22] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-19 16:35:22] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-19 16:35:22] [INFO] 帖子状态更新：ID=5，状态=待人工审核
+[2026-03-19 16:35:22] [INFO] AI审核完成：帖子ID=5，结果=存疑
+[2026-03-19 16:35:40] [INFO] 用户登录成功：790087
+[2026-03-19 16:35:43] [INFO] 用户登录成功：admin001
+[2026-03-19 16:51:30] [INFO] 用户登录成功：790087
+[2026-03-19 16:51:37] [INFO] 文件上传成功：{EE7C645C-4109-06B8-DB0A-22735D0C6F30}.gif -> 1773910297854-8746931.gif
+[2026-03-19 16:51:50] [INFO] 文件上传成功：C37781388674BE8E19841FF91957EDE6.jpg -> 1773910310517-97369197.jpg
+[2026-03-19 16:51:54] [INFO] 帖子创建成功：ID=6，用户ID=2
+[2026-03-19 16:51:54] [INFO] 开始AI审核：帖子ID=6
+[2026-03-19 16:51:54] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-19 16:51:54] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-19 16:51:54] [INFO] 帖子状态更新：ID=6，状态=待人工审核
+[2026-03-19 16:51:54] [INFO] AI审核完成：帖子ID=6，结果=存疑
+[2026-03-19 16:52:37] [INFO] 用户登录成功：admin001
+[2026-03-19 17:09:52] [INFO] 用户登录成功：790087
+[2026-03-19 17:09:57] [INFO] 文件上传成功：{EE7C645C-4109-06B8-DB0A-22735D0C6F30}.gif -> 1773911397707-534860560.gif
+[2026-03-19 17:10:02] [INFO] 文件上传成功：194C9407D107B7A570D5D534A3B13F72.jpg -> 1773911402590-77947320.jpg
+[2026-03-19 17:10:06] [INFO] 帖子创建成功：ID=7，用户ID=2
+[2026-03-19 17:10:06] [INFO] 开始AI审核：帖子ID=7
+[2026-03-19 17:10:07] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-19 17:10:07] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-19 17:10:07] [INFO] 帖子状态更新：ID=7，状态=待人工审核
+[2026-03-19 17:10:07] [INFO] AI审核完成：帖子ID=7，结果=存疑
+[2026-03-19 17:10:17] [INFO] 用户登录成功：admin001

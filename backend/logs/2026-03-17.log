@@ -1,0 +1,122 @@
+[2026-03-17 02:44:49] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-17 02:50:38] [INFO] 用户登录成功：2023001
+[2026-03-17 02:50:46] [ERROR] SQL执行失败：
+      INSERT INTO post (user_id, content, images, status, ai_result)
+      VALUES (?, ?, ?, ?, ?)
+    ，参数：[1,"123456","","AI审核中",""]，错误：Unknown column 'ai_result' in 'field list'
+[2026-03-17 02:52:04] [ERROR] SQL执行失败：
+      INSERT INTO post (user_id, content, images, status, ai_result)
+      VALUES (?, ?, ?, ?, ?)
+    ，参数：[1,"123456","","AI审核中",""]，错误：Incorrect integer value: 'AI\xE5\xAE\xA1\xE6\xA0\xB8\xE4\xB8\xAD' for column 'status' at row 1
+[2026-03-17 02:54:33] [ERROR] SQL执行失败：
+      INSERT INTO post (user_id, content, images, status, ai_result)
+      VALUES (?, ?, ?, ?, ?)
+    ，参数：[1,"123456","","AI审核中",""]，错误：Conversion from collation utf8mb4_unicode_ci into latin1_swedish_ci impossible for parameter
+[2026-03-17 03:00:43] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-17 03:00:45] [INFO] 帖子创建成功：ID=2，用户ID=1
+[2026-03-17 03:00:45] [INFO] 开始AI审核：帖子ID=2
+[2026-03-17 03:00:46] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 03:00:46] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 03:00:46] [ERROR] AI审核调度失败：帖子ID=2，错误=PostModel is not defined
+[2026-03-17 03:00:46] [ERROR] SQL执行失败：
+      UPDATE post 
+      SET status = ?, audit_user = ?, reject_reason = ?
+      WHERE id = ?
+    ，参数：["待人工审核",0,"AI审核接口异常",2]，错误：Unknown column 'audit_user' in 'field list'
+[2026-03-17 15:09:13] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-17 15:09:46] [INFO] 用户登录成功：2023001
+[2026-03-17 15:09:51] [INFO] 帖子创建成功：ID=3，用户ID=1
+[2026-03-17 15:09:51] [INFO] 开始AI审核：帖子ID=3
+[2026-03-17 15:09:51] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:09:51] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:09:51] [ERROR] AI审核调度失败：帖子ID=3，错误=PostModel is not defined
+[2026-03-17 15:09:51] [ERROR] SQL执行失败：
+      INSERT INTO audit_log (post_id, type, result, operator)
+      VALUES (?, ?, ?, ?)
+    ，参数：[3,"人工","驳回","0"]，错误：Unknown column 'type' in 'field list'
+[2026-03-17 15:15:00] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-17 15:15:03] [INFO] 帖子创建成功：ID=4，用户ID=1
+[2026-03-17 15:15:03] [INFO] 开始AI审核：帖子ID=4
+[2026-03-17 15:15:03] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:15:03] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:15:03] [ERROR] SQL执行失败：
+      INSERT INTO audit_log (post_id, type, result, operator)
+      VALUES (?, ?, ?, ?)
+    ，参数：[4,"AI","存疑","AI"]，错误：Unknown column 'operator' in 'field list'
+[2026-03-17 15:15:03] [ERROR] AI审核调度失败：帖子ID=4，错误=Unknown column 'operator' in 'field list'
+[2026-03-17 15:15:03] [ERROR] SQL执行失败：
+      INSERT INTO audit_log (post_id, type, result, operator)
+      VALUES (?, ?, ?, ?)
+    ，参数：[4,"人工","驳回","0"]，错误：Unknown column 'operator' in 'field list'
+[2026-03-17 15:23:47] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-17 15:23:49] [INFO] 帖子创建成功：ID=5，用户ID=1
+[2026-03-17 15:23:49] [INFO] 开始AI审核：帖子ID=5
+[2026-03-17 15:23:50] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:23:50] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:23:50] [ERROR] SQL执行失败：
+      INSERT INTO audit_log (post_id, type, result, operator_id)
+      VALUES (?, ?, ?, ?)
+    ，参数：[5,"AI","存疑",0]，错误：Incorrect integer value: '\xE5\xAD\x98\xE7\x96\x91' for column 'result' at row 1
+[2026-03-17 15:23:50] [ERROR] AI审核调度失败：帖子ID=5，错误=Incorrect integer value: '\xE5\xAD\x98\xE7\x96\x91' for column 'result' at row 1
+[2026-03-17 15:31:53] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-17 15:31:57] [INFO] 帖子创建成功：ID=6，用户ID=1
+[2026-03-17 15:31:57] [INFO] 开始AI审核：帖子ID=6
+[2026-03-17 15:31:57] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:31:57] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:31:57] [ERROR] SQL执行失败：
+      UPDATE post 
+      SET status = ?, audit_user = ?, reject_reason = ?
+      WHERE id = ?
+    ，参数：["待人工审核",0,"AI审核接口异常",6]，错误：Incorrect integer value: '\xE5\xBE\x85\xE4\xBA\xBA\xE5\xB7\xA5\xE5\xAE\xA1\xE6\xA0\xB8' for column 'status' at row 1
+[2026-03-17 15:31:57] [ERROR] AI审核调度失败：帖子ID=6，错误=Incorrect integer value: '\xE5\xBE\x85\xE4\xBA\xBA\xE5\xB7\xA5\xE5\xAE\xA1\xE6\xA0\xB8' for column 'status' at row 1
+[2026-03-17 15:31:57] [INFO] 帖子状态更新：ID=6，状态=3
+[2026-03-17 15:33:02] [INFO] 帖子创建成功：ID=7，用户ID=1
+[2026-03-17 15:33:02] [INFO] 开始AI审核：帖子ID=7
+[2026-03-17 15:33:02] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:33:02] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:33:02] [INFO] 帖子状态更新：ID=7，状态=待人工审核
+[2026-03-17 15:33:02] [INFO] AI审核完成：帖子ID=7，结果=存疑
+[2026-03-17 15:36:39] [INFO] 用户登录成功：2023001
+[2026-03-17 15:36:44] [INFO] 帖子创建成功：ID=1，用户ID=1
+[2026-03-17 15:36:44] [INFO] 开始AI审核：帖子ID=1
+[2026-03-17 15:36:44] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:36:44] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:36:44] [ERROR] SQL执行失败：
+      UPDATE post 
+      SET status = ?, audit_user = ?, reject_reason = ?
+      WHERE id = ?
+    ，参数：["待人工审核",0,"AI审核接口异常",1]，错误：Conversion from collation utf8mb4_unicode_ci into latin1_swedish_ci impossible for parameter
+[2026-03-17 15:36:44] [ERROR] AI审核调度失败：帖子ID=1，错误=Conversion from collation utf8mb4_unicode_ci into latin1_swedish_ci impossible for parameter
+[2026-03-17 15:36:44] [INFO] 帖子状态更新：ID=1，状态=3
+[2026-03-17 15:38:37] [INFO] 帖子创建成功：ID=2，用户ID=1
+[2026-03-17 15:38:37] [INFO] 开始AI审核：帖子ID=2
+[2026-03-17 15:38:37] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:38:37] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:38:37] [INFO] 帖子状态更新：ID=2，状态=待人工审核
+[2026-03-17 15:38:37] [INFO] AI审核完成：帖子ID=2，结果=存疑
+[2026-03-17 15:38:39] [INFO] 用户登录成功：2023001
+[2026-03-17 15:38:44] [INFO] 帖子创建成功：ID=3，用户ID=1
+[2026-03-17 15:38:44] [INFO] 开始AI审核：帖子ID=3
+[2026-03-17 15:38:44] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:38:44] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:38:44] [ERROR] SQL执行失败：
+      UPDATE post 
+      SET status = ?, audit_user = ?, reject_reason = ?
+      WHERE id = ?
+    ，参数：["待人工审核",0,"AI审核接口异常",3]，错误：Conversion from collation utf8mb4_unicode_ci into latin1_swedish_ci impossible for parameter
+[2026-03-17 15:38:44] [ERROR] AI审核调度失败：帖子ID=3，错误=Conversion from collation utf8mb4_unicode_ci into latin1_swedish_ci impossible for parameter
+[2026-03-17 15:38:44] [INFO] 帖子状态更新：ID=3，状态=3
+[2026-03-17 15:41:48] [INFO] 校园墙后端服务启动成功：http://localhost:3000
+[2026-03-17 15:41:52] [INFO] 帖子创建成功：ID=4，用户ID=1
+[2026-03-17 15:41:52] [INFO] 开始AI审核：帖子ID=4
+[2026-03-17 15:41:52] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:41:52] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:41:52] [INFO] 帖子状态更新：ID=4，状态=待人工审核
+[2026-03-17 15:41:52] [INFO] AI审核完成：帖子ID=4，结果=存疑
+[2026-03-17 15:42:00] [INFO] 用户登录成功：2023001
+[2026-03-17 15:42:05] [INFO] 帖子创建成功：ID=5，用户ID=1
+[2026-03-17 15:42:05] [INFO] 开始AI审核：帖子ID=5
+[2026-03-17 15:42:05] [ERROR] 腾讯云文本审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:42:05] [ERROR] AI审核失败：The SecretId is not found, please ensure that your SecretId is correct.
+[2026-03-17 15:42:05] [INFO] 帖子状态更新：ID=5，状态=待人工审核
+[2026-03-17 15:42:05] [INFO] AI审核完成：帖子ID=5，结果=存疑
