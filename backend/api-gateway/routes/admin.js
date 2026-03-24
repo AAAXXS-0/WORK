@@ -17,6 +17,7 @@ const logger = require('../../common/logger');
 const { BusinessException } = require('../../common/exception');
 const { ErrorCode } = require('../../common/errorCode');
 
+//GitHub测试接口
 // 配置multer内存存储（不需要物理目录）
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
