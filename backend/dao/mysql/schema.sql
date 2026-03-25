@@ -1,6 +1,13 @@
 -- 校园墙数据库表结构
 -- 状态码说明：使用数字替代中文字符串，便于维护和扩展
 
+<<<<<<< HEAD
+=======
+-- 库创建
+CREATE DATABASE IF NOT EXISTS `web_databases_wall`;
+USE `web_databases_wall`;
+
+>>>>>>> zhe-chen
 -- 学生花名册表（用于学生注册验证）
 CREATE TABLE IF NOT EXISTS `student_roster` (
   `id` INT PRIMARY KEY AUTO_INCREMENT COMMENT '记录ID',

@@ -23,11 +23,14 @@ request.interceptors.request.use(
 // 响应拦截器：统一处理错误
 request.interceptors.response.use(
   (response) => {
+<<<<<<< HEAD
     // 如果是文件下载请求（responseType为blob），直接返回响应数据
     if (response.config.responseType === 'blob') {
       return response
     }
     
+=======
+>>>>>>> zhe-chen
     const res = response.data
     if (res.code !== 0) {
       ElMessage.error(res.msg || '请求失败')

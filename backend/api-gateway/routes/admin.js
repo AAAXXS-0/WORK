@@ -61,6 +61,7 @@ router.get('/audit/log', async (req, res, next) => {
   } catch (err) { next(err); }
 });
 
+<<<<<<< HEAD
 // 导出审核日志
 router.get('/audit/export', async (req, res, next) => {
   try {
@@ -94,6 +95,8 @@ router.get('/audit/export', async (req, res, next) => {
   } catch (err) { next(err); }
 });
 
+=======
+>>>>>>> zhe-chen
 // 用户管理
 router.get('/user/list', async (req, res, next) => {
   try {
